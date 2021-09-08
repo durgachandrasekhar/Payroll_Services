@@ -14,3 +14,11 @@ Create table employee_payroll
 	Salary money Not Null,
 	Start datetime Not Null
 	)
+
+--UC3 Ability to Create employee_payroll data
+use Payroll_Services
+
+insert into employee_payroll(Name, Salary, Start) VALUES
+	('Billi',100000.0,'2018-01-03'),
+	('Terisa',200000.0,'2019-11-13'),
+	('Charlie',300000.0,'2021-05-21')
