@@ -53,3 +53,8 @@ select min(salary) as 'minimumSalary',gender from employee_payroll group by Gend
 select max(salary) as 'maximumSalary',gender from employee_payroll group by Gender;
 select count(Gender) as 'male' from employee_payroll where gender='M' 
 select count(Gender) as 'female' from employee_payroll where gender='F'
+
+--UC8
+ALTER TABLE employee_payroll ADD phone_number VARCHAR(13) Not null
+ALTER TABLE employee_payroll ADD address VARCHAR(10) Not null DEFAULT 'TBD'
+ALTER TABLE employee_payroll ADD department VARCHAR(10) Not null DEFAULT 'IT'
