@@ -27,3 +27,12 @@ insert into employee_payroll(Name, Salary, Start) VALUES
 use Payroll_Services
 
 select * from employee_payroll
+
+--UC5
+select Name, Salary from employee_payroll WHERE Name='Bill'
+
+select * from employee_payroll 
+	WHERE start BETWEEN CAST('2021-01-01' AS DATE) AND GETDATE() 
+
+select * from employee_payroll 
+	WHERE start BETWEEN CAST('2021-01-01' AS DATE) AND CAST('2021-09-01' AS DATE) 
